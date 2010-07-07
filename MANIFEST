@@ -1,5 +1,9 @@
 .gitignore
 Changes
+eg/enqueue.pl
+eg/lib/Worker/Test.pm
+eg/manager.pl
+eg/monitor.pl
 inc/Module/Install.pm
 inc/Module/Install/AuthorTests.pm
 inc/Module/Install/Base.pm
