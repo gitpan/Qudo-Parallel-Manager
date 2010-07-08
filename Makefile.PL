@@ -2,7 +2,7 @@ use inc::Module::Install;
 name 'Qudo-Parallel-Manager';
 all_from 'lib/Qudo/Parallel/Manager.pm';
 
-requires 'Prallel::Prefork';
+requires 'Parallel::Prefork';
 requires 'Sub::Throttle';
 
 tests 't/*.t';

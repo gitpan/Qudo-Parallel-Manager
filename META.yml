@@ -21,9 +21,9 @@ no_index:
     - t
     - xt
 requires:
-  Prallel::Prefork: 0
+  Parallel::Prefork: 0
   Sub::Throttle: 0
 resources:
   license: http://dev.perl.org/licenses/
   repository: git://github.com/nekokak/Qudo-Parallel-Manager.git
-version: 0.02
+version: 0.03
