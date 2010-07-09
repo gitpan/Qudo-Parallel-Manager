@@ -7,7 +7,7 @@ use Parallel::Prefork::SpareWorkers qw(:status);
 use Sub::Throttle qw/throttle/;
 use IO::Socket;
 
-our $VERSION = '0.03';
+our $VERSION = '0.04';
 
 sub new {
     my ($class, %args) = @_;
@@ -84,7 +84,6 @@ sub run {
                 } else {
                     sleep $self->{work_delay};
                 }
-                $self->debug("$$ $reqs_before_exit\n")
             }
         }
 
@@ -118,7 +117,6 @@ sub start_admin_port {
         Proto     => 'tcp',
         Type      => SOCK_STREAM,
         ReuseAddr => 1,
-        ReusePort => 1,
     ) or die "Cannot open server socket: $!";
 
     while (my $remote = $admin->accept) {
